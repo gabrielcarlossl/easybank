@@ -1,12 +1,6 @@
 <!-- TITLE -->
   <h1>Easy Bank Landing Page Challange</h1>
 
-  <ol>
-    <li><a href="#about-the-project">About the project</a></li>
-    <li><a href="#built-with">Built With</a></li>
-    <li><a href="#getting-started">Getting Started</a></li>
-  </ol>
-
 ## Built With
 
 Technologies and libraries used in the template
