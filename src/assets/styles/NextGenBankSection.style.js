@@ -72,9 +72,7 @@ export const customSection = css`
       background-size: cover;
     }
   }
-  @media (max-width: 1400px) and (min-width: 1024px) {
-    left: -7%;
-  }
+
   @media screen and (min-width: 1024px) {
     .imageSrc {
       display: block;
@@ -82,6 +80,9 @@ export const customSection = css`
       top: -12px;
       z-index: 1;
       left: 80%;
+      @media (max-width: 1400px) and (min-width: 1025px) {
+        left: -7%;
+      }
       @media (max-width: 1280px) and (min-width: 850px) {
         left: -12%;
       }
