@@ -51,7 +51,7 @@ export const footer = css`
   }
   .flex {
     display: flex;
-    gap: 60%;
+    gap: 90px;
     div:first-child{
       justify-content: space-between;
     }

@@ -21,7 +21,7 @@ const NextGenBankSection = () => {
             <div class='description'>
               <h1 class='title'>Next generation digital banking</h1>
               <p class='text'>
-                Take your finalcial life online. Your Easybank account will be a
+                Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending. saving, budgeting, investing, and
                 much more.
               </p>
@@ -44,7 +44,7 @@ const NextGenBankSection = () => {
         </div>
       </section>
       <section>
-        
+
       </section>
     </div>
   )
