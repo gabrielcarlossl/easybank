@@ -11,9 +11,9 @@ const Footer = () => {
       <div className='footer'>
         <div className='flex'>
           <div className='flex-col'>
-            <div>
+            <a href='/'>
               <img src={logo} alt='' />
-            </div>
+            </a>
             <div className='socialIcons'>
               <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'>
                 <path
