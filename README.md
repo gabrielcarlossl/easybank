@@ -1,9 +1,13 @@
 <!-- TITLE -->
   <h1>Easy Bank Landing Page Challange</h1>
 
+  <h2>
+    <a href='https://easybank-v7.netlify.app/'>View Project Deploy</a>
+  </h2>
+
 ## Built With
 
-Technologies and libraries used in the template
+Technologies and libraries used:
 
 [![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://pt-br.reactjs.org/) - Version 18.2.0<br/>
 [![image](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white)](https://www.gatsbyjs.com/) - Version 4.22.1<br/>
