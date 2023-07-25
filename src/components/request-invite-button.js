@@ -13,7 +13,7 @@ export const inviteBtn = css`
     white-space:nowrap;
     &:hover {
       cursor: pointer;
-      opacity: 0.5;
+      filter: brightness(150%);
     }
   }
 `
