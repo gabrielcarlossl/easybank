@@ -47,11 +47,18 @@ export const showOverlayNav = css`
     top: 130px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0.1px 0.4px 175.8px rgba(0, 0, 0, 0.667),
-      1.3px 9.3px 218.5px rgba(0, 0, 0, 0.641),
-      4.3px 30.8px 233.5px rgba(0, 0, 0, 0.582),
-      9.1px 65.6px 226.5px rgba(0, 0, 0, 0.513),
-      16px 115px 153px rgba(0, 0, 0, 0.44);
+    box-shadow:
+  0px 198.1px 206.3px rgba(0, 0, 0, 0.08),
+  0px 214.5px 223.4px rgba(0, 0, 0, 0.111),
+  0px 204.5px 212.9px rgba(0, 0, 0, 0.119),
+  0px 183.3px 190.8px rgba(0, 0, 0, 0.123),
+  0px 157.5px 164px rgba(0, 0, 0, 0.123),
+  0px 131.7px 137.2px rgba(0, 0, 0, 0.12),
+  0px 110.5px 115.1px rgba(0, 0, 0, 0.115),
+  0px 100.5px 104.6px rgba(0, 0, 0, 0.106),
+  0px 116.9px 121.7px rgba(0, 0, 0, 0.092),
+  0px 315px 328px rgba(0, 0, 0, 0.07)
+;
   }
 `
 
