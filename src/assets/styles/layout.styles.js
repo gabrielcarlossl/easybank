@@ -124,7 +124,7 @@ export const redBg = css`
 `;
 
 export const showIt = css`
-  background: #e62b4a;
+  background: #32CF70;
   bottom: 60px;
   color: #ffffff;
   font-size: 20px;
@@ -139,7 +139,7 @@ export const showIt = css`
   cursor: pointer;
 
   &:hover {
-    background: #000;
+    background: #2ab6d9;
     color: #fff;
   }
 `;
