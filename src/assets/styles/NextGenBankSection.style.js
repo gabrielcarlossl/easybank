@@ -98,19 +98,20 @@ export const whySection = css`
   padding-bottom: 100px;
   .whyTitle {
     margin-left: 15%;
-    h2{
-        margin-bottom: 25px;
-        color: #2D314D;
+    h2 {
+      margin-bottom: 25px;
+      color: #2d314d;
     }
     p {
-        margin: 0;
-        padding: 0;
-        width: 600px;
-        color: gray;
+      margin: 0;
+      padding: 0;
+      width: 600px;
+      color: gray;
     }
   }
-  .cards{
+  .cards {
     display: flex;
+    margin-top: 50px;
     margin-left: 15%;
     margin-right: 15%;
     gap: 20px;
@@ -118,7 +119,7 @@ export const whySection = css`
       display: flex;
       flex-direction: column;
       margin-left: 5%;
-    margin-right: 5%;
+      margin-right: 5%;
     }
   }
 `
