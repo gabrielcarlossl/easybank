@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import lineMarker from "../images/line-maker.svg";
 
 export const popUp = css`
-  background: rgba(17, 17, 17, 0.98);
+  background: #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -moz-box;
@@ -15,7 +15,7 @@ export const popUp = css`
   -ms-flex-align: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 270px;
   opacity: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -26,7 +26,9 @@ export const popUp = css`
   transform: translateY(-100%);
   transition: all 0.6s 0s cubic-bezier(0.7, 0, 0.3, 1);
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
+  border-radius: 8px;
+  overflow-y: hidden;
 `;
 
 export const showOverlayNav = css`
@@ -39,9 +41,12 @@ export const showOverlayNav = css`
   .popup.popup__menu  {
     opacity: 1;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     visibility: visible;
     transform: translateY(0);
+    top: 130px;
+    width: 90%;
+    margin-left: 5%;
   }
 
 
@@ -64,7 +69,6 @@ export const closepopUp = css`
   position: absolute;
   right: 30px;
   top: 30px;
-  text-transform: uppercase;
   transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
   -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
   z-index: 99;
@@ -73,10 +77,6 @@ export const closepopUp = css`
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
     -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
-    :after,
-    :before {
-      background: #e62b4a;
-    }
   }
 
   &:after {
@@ -123,54 +123,12 @@ export const footerContacts = css`
     list-style: none;
     display: block;
     font-size: 16px;
-    color: #818181;
+    color: #313445;
     line-height: 22px;
     margin: 0 0 7px;
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-`;
-
-export const popUpSocial = css`
-  position: absolute;
-  right: 0;
-  bottom: 34px;
-  padding: 0;
-
-  ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-      padding: 0;
-      margin: 0 20px 0 0;
-      list-style: none;
-      display: inline-block;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-
-      a {
-        font-size: 14px;
-        letter-spacing: 0.56px;
-        color: #aaaaaa;
-        margin: 0;
-        display: block;
-        text-align: left;
-
-        &:hover {
-          color: #fff;
-        }
-
-        i {
-          font-size: 16px;
-          color: #fff;
-          margin-right: 10px;
-        }
-      }
     }
   }
 `;
@@ -213,7 +171,7 @@ export const dlMenuWrap = css`
     border: none;
     background-color: transparent;
     outline: none;
-    color: #fff;
+    color: #313445;
   }
 
   ul {
@@ -222,7 +180,7 @@ export const dlMenuWrap = css`
     transform-style: preserve-3d;
 
     li {
-      margin: 13px 0;
+      margin: 20px 0;
       position: relative;
       display: block;
 
@@ -240,8 +198,7 @@ export const dlMenuWrap = css`
       }
 
       a {
-        color: #fff;
-        text-transform: uppercase;
+        color: #313445;
         font-size: 16px;
         line-height: 0.8;
         letter-spacing: 1px;

@@ -6,9 +6,11 @@ import { SearchContext } from "@/context/search-context";
 import { MenuContext } from "@/context/menu-context";
 import { Link } from "gatsby";
 import { jsx } from '@emotion/react'
+import closeIcon from '../assets/images/icon-close.svg'
 
 import { 
   header,
+  inviteBtn,
   logo,
   mainMenu,
   navigator 
@@ -17,16 +19,22 @@ import {
 
 const HeaderOne = () => {
   const [sticky, setSticky] = useState(false);
-  const { searchStatus, updateSearchStatus } = useContext(SearchContext);
   const { menuStatus, updateMenuStatus } = useContext(MenuContext);
-  const handleSearchClick = e => {
-    e.preventDefault();
-    updateSearchStatus(!searchStatus);
-  };
+
+  const [toggle, setToggle] = useState(false)
+  
   const handleMenuClick = e => {
     e.preventDefault();
     updateMenuStatus(!menuStatus);
   };
+
+  const handleToggleClick = () => {
+    if (toggle) {
+      setToggle(false)
+    } else{
+      setToggle(true)
+    }
+  }
 
   const handleScroll = () => {
     if (window.scrollY > 70) {
@@ -80,6 +88,9 @@ const HeaderOne = () => {
               </ul>
             </nav>
           </Col>
+          <Col css={inviteBtn}>
+          <Link >Request Invite</Link>
+          </Col>
           <Col lg={2} md={2} sm={4} className="col-6">
             <div css={navigator} className="text-right">
               <a
@@ -94,7 +105,8 @@ const HeaderOne = () => {
                 onClick={handleMenuClick}
                 href="#"
               >
-                <i className="mei-menu"></i>
+                <i onClick={handleToggleClick} style={{display: `${toggle ? 'none' : 'flex'}`}} className="mei-menu"></i>
+                <img onClick={handleToggleClick} style={{display: `${toggle ? 'flex' : 'none'}`, marginRight: '10px'}} src={closeIcon} alt="" />
               </a>
             </div>
           </Col>

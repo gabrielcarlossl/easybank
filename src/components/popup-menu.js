@@ -9,8 +9,6 @@ import {
   showOverlayNav,
   popUpMenu,
   closepopUp,
-  footerContacts,
-  popUpSocial,
   logo2,
   popUpInner,
   dlMenuWrap,
@@ -28,12 +26,7 @@ const PopupMenu = () => {
   return (
     <div className="show-overlay-nav" css={showOverlayNav}>
       <div className="popup popup__menu" css={[popUp,popUpMenu]}>
-        <a
-          href=""
-          id="close-popup"
-          onClick={handleMenuClick}
-          css={closepopUp}
-        ></a>
+        
         <div className="container mobileContainer">
           <div className="row">
             <div className="col-lg-12 text-left">
@@ -100,38 +93,7 @@ const PopupMenu = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-6 col-sm-12 col-xs-12 text-center text-md-left">
-              <ul css={footerContacts}>
-                <li>Phone: 666 888 000</li>
-                <li>Email: needhelp@meipaly.com</li>
-                <li>
-                  Address: 66 Broklyn Street, New York United States of America
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-6 col-sm-12">
-              <div css={popUpSocial} className="text-center text-md-right">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-twitter"></i>Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-facebook-square"></i>Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-youtube-play"></i>Youtube
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

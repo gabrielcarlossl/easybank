@@ -139,21 +139,36 @@ export const mainMenu = css`
   }
 `;
 
+export const inviteBtn = css`
+@media (max-width: 500px) {
+  display: none;
+}
+
+a {
+  padding: 15px 40px;
+  background-image: linear-gradient(to right, #33D35E , #2AB6D9);
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff !important;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+`
+
 export const navigator = css`
+  @media (min-width: 850px) {
+    display: none;
+  }
   position: relative;
   padding: 6px 0 37px;
-
   & a {
     display: inline-block;
     color:  #56565F;
     line-height: 0.8;
     font-size: 25px;
     margin: 0;
-
-    &:hover,
-    .active {
-      color: #e62b4a;
-    }
 
     &.search {
       margin-right: 16px;
