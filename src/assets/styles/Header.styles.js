@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css } from "@emotion/react";
+import { css } from '@emotion/react'
 
 export const header = css`
   position: absolute;
@@ -10,10 +10,9 @@ export const header = css`
   background: #fff;
   padding: 39px 40px 0 45px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  color: #C5C4CA;
+  color: #c5c4ca;
   .header {
     @media (min-width: 500px) {
-      
       margin-right: 10%;
       margin-left: 10%;
     }
@@ -58,7 +57,7 @@ export const header = css`
   @media (min-width: 320px) and (max-width: 767px) {
     padding: 39px 0 0;
   }
-`;
+`
 
 export const logo = css`
   display: flex;
@@ -68,7 +67,13 @@ export const logo = css`
     max-width: 100%;
     height: auto;
   }
-`;
+  @media (max-width: 850px) and (min-width: 500px) {
+    img {
+      max-width: 200px !important;
+      width: 200px;
+    }
+  }
+`
 
 export const mainMenu = css`
   position: relative;
@@ -85,7 +90,7 @@ export const mainMenu = css`
       position: relative;
 
       & > .active a {
-        color:  #94959A;
+        color: #94959a;
         &:after {
           width: 100%;
         }
@@ -93,13 +98,13 @@ export const mainMenu = css`
 
       & a {
         display: block;
-        color:  #94959A;
+        color: #94959a;
         font-size: 16px;
         line-height: 0.8;
         position: relative;
 
         &:hover {
-          color:  #33D35E;
+          color: #33d35e;
           &:after {
             width: 100%;
             background-color: #ffffff;
@@ -110,7 +115,7 @@ export const mainMenu = css`
           position: absolute;
           width: 0;
           height: 1px;
-          content: "";
+          content: '';
           background: #fff;
           left: 0;
           right: 0;
@@ -145,12 +150,12 @@ export const mainMenu = css`
       }
     }
   }
-`;
+`
 
 export const inviteBtn = css`
-@media (max-width: 1050px) {
-  display: none;
-}
+  @media (max-width: 1050px) {
+    display: none;
+  }
 `
 
 export const navigator = css`
@@ -161,7 +166,7 @@ export const navigator = css`
   padding: 6px 0 37px;
   & a {
     display: inline-block;
-    color:  #56565F;
+    color: #56565f;
     line-height: 0.8;
     font-size: 25px;
     margin: 0;
@@ -180,4 +185,4 @@ export const navigator = css`
       }
     }
   }
-`;
+`
