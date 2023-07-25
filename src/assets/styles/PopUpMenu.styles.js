@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { css } from "@emotion/react";
-import lineMarker from "../images/line-maker.svg";
+import { css } from '@emotion/react'
+import lineMarker from '../images/line-maker.svg'
 
 export const popUp = css`
   background: #fff;
@@ -29,7 +29,7 @@ export const popUp = css`
   z-index: 1;
   border-radius: 8px;
   overflow-y: hidden;
-`;
+`
 
 export const showOverlayNav = css`
   overflow: hidden;
@@ -38,7 +38,7 @@ export const showOverlayNav = css`
     transform: translateY(0);
   }
 
-  .popup.popup__menu  {
+  .popup.popup__menu {
     opacity: 1;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -47,17 +47,20 @@ export const showOverlayNav = css`
     top: 130px;
     width: 90%;
     margin-left: 5%;
+    box-shadow: 0.1px 0.4px 175.8px rgba(0, 0, 0, 0.667),
+      1.3px 9.3px 218.5px rgba(0, 0, 0, 0.641),
+      4.3px 30.8px 233.5px rgba(0, 0, 0, 0.582),
+      9.1px 65.6px 226.5px rgba(0, 0, 0, 0.513),
+      16px 115px 153px rgba(0, 0, 0, 0.44);
   }
-
-
-`;
+`
 
 export const popUpMenu = css`
   background-image: url(${lineMarker});
   background-repeat: repeat;
   background-position: center center;
   padding: 0;
-`;
+`
 
 export const closepopUp = css`
   background-color: #fff;
@@ -86,7 +89,7 @@ export const closepopUp = css`
     position: absolute;
     right: 17.5px;
     top: 24px;
-    content: "";
+    content: '';
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -102,7 +105,7 @@ export const closepopUp = css`
     position: absolute;
     right: 17.5px;
     top: 24px;
-    content: "";
+    content: '';
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -110,7 +113,7 @@ export const closepopUp = css`
     -webkit-transition: all ease 400ms;
     -moz-transition: all ease 400ms;
   }
-`;
+`
 
 export const footerContacts = css`
   position: absolute;
@@ -131,14 +134,14 @@ export const footerContacts = css`
       margin-bottom: 0;
     }
   }
-`;
+`
 
 export const logo2 = css`
   z-index: 99;
   position: absolute;
   left: 0;
   top: 30px;
-`;
+`
 
 export const popUpInner = css`
   display: -webkit-flex;
@@ -156,7 +159,7 @@ export const popUpInner = css`
   transform: translateY(-100%);
   transition: all 0.6s 1000ms cubic-bezier(0.7, 0, 0.3, 1);
   width: 100%;
-`;
+`
 
 export const dlMenuWrap = css`
   height: auto;
@@ -219,7 +222,7 @@ export const dlMenuWrap = css`
           position: absolute;
           width: 0;
           height: 1px;
-          content: "";
+          content: '';
           background: #fff;
           left: 0;
           right: 0;
@@ -232,7 +235,7 @@ export const dlMenuWrap = css`
       }
     }
   }
-`;
+`
 
 export const subMenu = css`
   display: none;
@@ -242,4 +245,4 @@ export const subMenu = css`
   &.show {
     display: block;
   }
-`;
+`
