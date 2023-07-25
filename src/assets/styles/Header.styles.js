@@ -11,6 +11,13 @@ export const header = css`
   padding: 39px 40px 0 45px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   color: #C5C4CA;
+  .header {
+    @media (min-width: 500px) {
+      
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+  }
 
   &.fixedHeader {
     background-color: #fff;
@@ -54,7 +61,8 @@ export const header = css`
 `;
 
 export const logo = css`
-  text-align: left;
+  display: flex;
+  justify-content: center;
   padding: 0 0 39px;
   img {
     max-width: 100%;
@@ -140,20 +148,8 @@ export const mainMenu = css`
 `;
 
 export const inviteBtn = css`
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
   display: none;
-}
-
-a {
-  padding: 15px 40px;
-  background-image: linear-gradient(to right, #33D35E , #2AB6D9);
-  border-radius: 50px;
-  font-weight: 500;
-  color: #fff !important;
-  &:hover{
-    cursor: pointer;
-    opacity: 0.5;
-  }
 }
 `
 

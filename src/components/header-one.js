@@ -2,7 +2,6 @@
 import { useState, useEffect, useContext } from "react";
 import { LogoImage, NavLinks } from "@/data";
 import { Col, Container, Row } from "react-bootstrap";
-import { SearchContext } from "@/context/search-context";
 import { MenuContext } from "@/context/menu-context";
 import { Link } from "gatsby";
 import { jsx } from '@emotion/react'
@@ -15,6 +14,7 @@ import {
   mainMenu,
   navigator 
 }  from '../assets/styles/Header.styles'
+import RequestInviteButton from './request-invite-button';
 
 
 const HeaderOne = () => {
@@ -60,7 +60,7 @@ const HeaderOne = () => {
     >
       
       <Container fluid>
-        <Row className="justify-content-between">
+        <Row style={{flexWrap: 'nowrap'}} className="justify-content-between header">
           <Col className="col-6" lg={2} md={3} sm={3}>
             <div css={logo}>
               <Link to="/">
@@ -89,7 +89,7 @@ const HeaderOne = () => {
             </nav>
           </Col>
           <Col css={inviteBtn}>
-          <Link >Request Invite</Link>
+           <RequestInviteButton />
           </Col>
           <Col lg={2} md={2} sm={4} className="col-6">
             <div css={navigator} className="text-right">
