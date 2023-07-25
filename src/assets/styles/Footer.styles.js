@@ -18,6 +18,7 @@ export const footer = css`
   a {
     color: #fff;
     white-space: nowrap;
+    cursor: pointer;
     &:hover {
       color: #33d35e;
       text-decoration: none;
