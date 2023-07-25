@@ -52,6 +52,9 @@ export const footer = css`
   .flex {
     display: flex;
     gap: 60%;
+    div:first-child{
+      justify-content: space-between;
+    }
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
@@ -62,7 +65,7 @@ export const footer = css`
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
+    gap: 25px;
     @media (max-width: 500px) {
       align-items: center;
     }
