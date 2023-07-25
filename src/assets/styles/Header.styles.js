@@ -154,7 +154,7 @@ export const inviteBtn = css`
 `
 
 export const navigator = css`
-  @media (min-width: 850px) {
+  @media (min-width: 995px) {
     display: none;
   }
   position: relative;

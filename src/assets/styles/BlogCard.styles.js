@@ -35,3 +35,10 @@ export const lbiDetails = css`
     }
   }
 `
+export const blogSection = css`
+display: flex;
+gap: 40px;
+@media (max-width: 850px) {
+    flex-direction: column;
+}
+`
