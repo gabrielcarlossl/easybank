@@ -70,21 +70,21 @@ export const blogData = [
     author: 'Claire Robinson',
     title: 'Receive money in any currency with no fees',
     resume:
-      'The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …',
+      'The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single ...',
   },
   {
     img: restaurant,
     author: 'Wilson Hutton',
     title: 'Treat yourself without worrying about money',
     resume:
-      'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …',
+      'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you ...',
   },
   {
     img: plane,
     author: 'Wilson Hutton',
     title: 'Take your Easybank card wherever you go',
     resume:
-      'We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …',
+      'We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you ...',
   },
   {
     img: confetti,

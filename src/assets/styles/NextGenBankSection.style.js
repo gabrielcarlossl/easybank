@@ -12,10 +12,16 @@ export const customSection = css`
 
     .description {
       align-self: end;
+      @media (max-width: 500px) {
+        margin: 0 30px;
+      }
       .title {
         font-weight: 400;
         color: #2d314d;
         font-family: Arial, Helvetica, sans-serif;
+        @media (max-width: 500px) {
+        margin-bottom: 20px;
+      }
       }
       .text {
         color: gray;
@@ -102,15 +108,31 @@ export const whySection = css`
   padding-bottom: 100px;
   .whyTitle {
     margin-left: 15%;
+    @media (max-width: 500px) {
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
     h2 {
       margin-bottom: 25px;
       color: #2d314d;
+      @media (max-width: 500px) {
+       width: 200px;
+       text-align: center;
+      }
     }
     p {
       margin: 0;
       padding: 0;
       width: 600px;
       color: gray;
+      @media (max-width: 500px) {
+       width: 100%; 
+       padding: 0 20px;
+       text-align: center;
+      }
+            
     }
   }
   .cards {

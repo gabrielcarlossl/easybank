@@ -16,7 +16,7 @@ const BlogCard = ({ data }) => {
         <img src={img} alt={title} />
       </div>
 
-      <div style={{padding: '30px'}}>
+      <div className='blogCardContent'>
         <span>By {author}</span>
 
         <div css={lbiDetails}>

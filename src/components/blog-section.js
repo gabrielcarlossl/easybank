@@ -7,7 +7,7 @@ import { blogSection } from '../assets/styles/BlogCard.styles'
 const BlogSection = () => {
   return (
     <div css={style}>
-      <div style={{margin: '0px 15% 0px 15%'}}>
+      <div className='blogContainer'>
         <h2>Latest Articles</h2>
         <div css={blogSection} style={{ display: 'flex', gap: '40px' }}>
           {blogData.map((data) => (
