@@ -18,7 +18,7 @@ export const customSection = css`
         font-family: Arial, Helvetica, sans-serif;
       }
       .text {
-        color: #babcc4;
+        color: gray;
       }
     }
   }
@@ -94,7 +94,31 @@ export const customSection = css`
 
 export const whySection = css`
   background-color: #f3f4f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .whyTitle {
     margin-left: 15%;
+    h2{
+        margin-bottom: 25px;
+        color: #2D314D;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        width: 600px;
+        color: gray;
+    }
+  }
+  .cards{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 20px;
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+    margin-right: 5%;
+    }
   }
 `
