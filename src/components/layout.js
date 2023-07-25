@@ -40,6 +40,7 @@ const GlobalStyles = () => {
             transition: all ease 400ms;
             -webkit-transition: all ease 400ms;
             -moz-transition: all ease 400ms;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         /*------------------------------------------------------------------------------
