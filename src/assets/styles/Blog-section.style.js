@@ -7,10 +7,19 @@ export const style = css`
   h2 {
     margin-bottom: 60px;
     color: #2d314d;
+    @media (max-width: 850px) and (min-width: 500px) {
+      font-size: 34px;
+    }
   }
 
   .blogContainer {
-    margin: 0px 6% 0px 6%;
+    margin: 0px 15% 0px 15%;
+    @media (max-width: 1500px) {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+    }
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;

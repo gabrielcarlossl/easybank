@@ -6,12 +6,19 @@ export const footer = css`
   padding: 100px 0 0;
   background: #2d314d;
   height: 300px;
-  @media (max-width: 500px) {
+  @media (max-width: 850px)  {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+  }
+  @media (max-width: 850px) {
     display: flex;
     flex-direction: column;
     height: fit-content;
     align-items: center;
   }
+  
   span {
     color: #fff;
   }
@@ -29,7 +36,7 @@ export const footer = css`
     justify-content: space-between;
     margin-right: 15%;
     margin-left: 15%;
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
       display: flex;
       flex-direction: column;
     }
@@ -37,13 +44,13 @@ export const footer = css`
   .requestBtnSection {
     display: flex;
     flex-direction: column;
-    @media (max-width: 500px) {
+    @media (max-width:850px) {
         margin-bottom: 40px;
       }
     div:first-of-type {
       margin-bottom: 30px;
       align-self: flex-end;
-      @media (max-width: 500px) {
+      @media (max-width: 850px) {
         align-self: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -56,7 +63,7 @@ export const footer = css`
     div:first-child{
       justify-content: space-between;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -67,7 +74,7 @@ export const footer = css`
     flex-direction: column;
     width: 100%;
     gap: 25px;
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
       align-items: center;
     }
   }

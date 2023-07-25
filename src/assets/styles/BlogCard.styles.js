@@ -5,26 +5,38 @@ export const latestBlogItem = css`
   background-color: #fff;
   width: 300px;
   border-radius: 8px;
+  @media (max-width: 850px) and (min-width: 500px) {
+    width: 600px !important;
+  }
   @media (max-width: 1500px) {
-      width: 250px;
-    }
-    @media (max-width: 500px) {
-      width: 100%;
-    }
+    width: 220px;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
   p {
     color: gray;
+    @media (max-width: 850px) and (min-width: 500px) {
+      font-size: 24px !important;
+    }
     @media (max-width: 1500px) {
       font-size: 15px;
     }
   }
   span {
     font-size: 13px;
+    @media (max-width: 850px) and (min-width: 500px) {
+      font-size: 18px;
+    }
   }
 
-  .blogCardContent{
+  .blogCardContent {
     padding: 30px;
     @media (max-width: 1500px) {
       padding: 15px;
+    }
+    @media (max-width: 850px) and (min-width: 500px) {
+      padding: 40px;
     }
     @media (max-width: 500px) {
       padding: 25px;
@@ -39,8 +51,12 @@ export const lbiThumb = css`
     width: 300px;
     height: 200px;
     @media (max-width: 1500px) {
-      width: 250px;
+      width: 220px;
       height: 150px;
+    }
+    @media (max-width: 850px) and (min-width: 500px) {
+      width: 100%;
+      height: 300px;
     }
     @media (max-width: 500px) {
       width: 100%;
@@ -57,6 +73,9 @@ export const lbiDetails = css`
     @media (max-width: 1500px) {
       font-size: 18px;
     }
+    @media (max-width: 850px) and (min-width: 500px) {
+      font-size: 32px;
+    }
     @media (max-width: 500px) {
       font-size: 20px;
     }
@@ -69,12 +88,12 @@ export const lbiDetails = css`
   }
 `
 export const blogSection = css`
-display: flex;
-gap: 40px;
-@media (max-width: 1500px) {
-      
-    }
-@media (max-width: 850px) {
+  display: flex;
+  gap: 40px;
+  @media (max-width: 1500px) {
+    gap: 20px !important;
+  }
+  @media (max-width: 850px) {
     flex-direction: column;
-}
+  }
 `

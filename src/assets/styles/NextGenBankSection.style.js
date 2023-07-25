@@ -20,8 +20,8 @@ export const customSection = css`
         color: #2d314d;
         font-family: Arial, Helvetica, sans-serif;
         @media (max-width: 500px) {
-        margin-bottom: 20px;
-      }
+          margin-bottom: 20px;
+        }
       }
       .text {
         color: gray;
@@ -38,6 +38,10 @@ export const customSection = css`
       url(${bgColorsMobile}) center no-repeat;
     background-size: 345px, cover;
     margin-bottom: 1.2em;
+    @media (max-width: 850px) and (min-width: 500px) {
+      height: 795px;
+      background-size: 1200px, cover;
+    }
     @media (max-width: 500px) {
       background-size: 570px, cover;
     }
@@ -48,8 +52,12 @@ export const customSection = css`
       top: -7%;
       width: 400px;
     }
+    @media (max-width: 850px) and (min-width: 500px) {
+      position: relative;
+      bottom: 160px;
+    }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 850px) {
     .sectionStyle {
       text-align: left;
       background: url(${bgColors}) left 650px top -290px no-repeat;
@@ -76,6 +84,9 @@ export const customSection = css`
       height: 768px;
       background: url(${phones}) left bottom no-repeat;
       background-size: cover;
+      @media (max-width: 850px) and (min-width: 500px) {
+        height: 850px;
+      }
     }
   }
 
@@ -106,20 +117,37 @@ export const whySection = css`
   background-color: #f3f4f6;
   padding-top: 100px;
   padding-bottom: 100px;
+  @media (max-width: 850px) and (min-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .whyTitle {
     margin-left: 15%;
+    @media (max-width: 850px) and (min-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0;
+      align-items: center;
+    }
     @media (max-width: 500px) {
-       margin: 0;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-      }
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     h2 {
       margin-bottom: 25px;
       color: #2d314d;
+      @media (max-width: 850px) and (min-width: 500px) {
+        text-align: center;
+        font-size: 36px;
+      }
       @media (max-width: 500px) {
-       width: 200px;
-       text-align: center;
+        width: 200px;
+        text-align: center;
       }
     }
     p {
@@ -127,12 +155,15 @@ export const whySection = css`
       padding: 0;
       width: 600px;
       color: gray;
-      @media (max-width: 500px) {
-       width: 100%; 
-       padding: 0 20px;
-       text-align: center;
+      @media (max-width: 850px) and (min-width: 500px) {
+        text-align: center;
+        font-size: 22px;
       }
-            
+      @media (max-width: 500px) {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+      }
     }
   }
   .cards {
@@ -141,6 +172,12 @@ export const whySection = css`
     margin-left: 15%;
     margin-right: 15%;
     gap: 20px;
+    @media (max-width: 850px) and (min-width: 500px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
