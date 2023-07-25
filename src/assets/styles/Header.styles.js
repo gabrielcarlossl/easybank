@@ -99,7 +99,7 @@ export const mainMenu = css`
         position: relative;
 
         &:hover {
-          color:  #94959A;
+          color:  #33D35E;
           &:after {
             width: 100%;
             background-color: #ffffff;
