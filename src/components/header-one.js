@@ -95,7 +95,7 @@ const HeaderOne = () => {
             <div css={navigator} className="text-right">
               <a
                 href="#"
-                className="menu mobilemenu d-none d-md-none d-lg-none"
+                className="menu mobilemenu d-none d-lg-none"
               >
                 <i className="mei-menu"></i>
               </a>
