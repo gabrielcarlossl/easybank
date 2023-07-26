@@ -65,7 +65,7 @@ const Footer = () => {
           <div>
             <RequestInviteButton />
           </div>
-          <span>© Easybank. All Rights Reserved</span>
+          <span className='copyright'>© Easybank. All Rights Reserved</span>
         </div>
       </Container>
     </footer>

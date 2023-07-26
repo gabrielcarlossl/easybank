@@ -3,9 +3,9 @@ import { css } from '@emotion/react'
 
 export const footer = css`
   position: relative;
-  padding: 100px 0 0;
+  padding: 100px 0;
   background: #2d314d;
-  height: 300px;
+  height: fit-content;
   @media (max-width: 850px)  {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +84,12 @@ export const footer = css`
       path {
         fill: #33d35e;
       }
+    }
+  }
+
+  .copyright{
+    @media (max-width: 850px) {
+      text-align: center;
     }
   }
 `
