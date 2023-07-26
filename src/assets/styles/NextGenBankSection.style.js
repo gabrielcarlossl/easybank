@@ -6,14 +6,24 @@ import phones from '../images/image-mockups.png'
 export const customSection = css`
   overflow-x: hidden;
   overflow-y: hidden;
+
+  @media (max-width: 500px) {
+    .sectionStyle {
+      padding: 0 !important;
+      margin: 0px !important;
+    }
+  }
   .sectionStyle {
     text-align: center;
     padding-bottom: 5em;
 
     .description {
       align-self: end;
+      position: relative;
+
       @media (max-width: 500px) {
         margin: 0 30px;
+        padding-bottom: 60px;
       }
       .title {
         font-weight: 400;
@@ -72,7 +82,6 @@ export const customSection = css`
       min-height: 550px;
       grid-template-areas: 'description image';
       grid-template-columns: 370px 1fr;
-      margin-left: 15%;
     }
     .image {
       grid-area: image;
@@ -94,14 +103,14 @@ export const customSection = css`
     .imageSrc {
       display: block;
       position: relative;
-      top: -12px;
+      top: -87px;
       z-index: 1;
-      left: 80%;
+      left: 73%;
       @media (max-width: 1400px) and (min-width: 1025px) {
         left: -7%;
       }
       @media (max-width: 1280px) and (min-width: 850px) {
-        left: -12%;
+        left: 5%;
       }
     }
     .image {
@@ -123,8 +132,15 @@ export const whySection = css`
     justify-content: center;
     align-items: center;
   }
+  .whyTitleContainer {
+    @media (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
   .whyTitle {
-    margin-left: 15%;
     @media (max-width: 850px) and (min-width: 500px) {
       display: flex;
       flex-direction: column;
@@ -146,14 +162,14 @@ export const whySection = css`
         font-size: 36px;
       }
       @media (max-width: 500px) {
-        width: 200px;
+        margin: 0 20px 30px 20px;
         text-align: center;
       }
     }
     p {
       margin: 0;
       padding: 0;
-      width: 600px;
+
       color: gray;
       @media (max-width: 850px) and (min-width: 500px) {
         text-align: center;
@@ -169,8 +185,9 @@ export const whySection = css`
   .cards {
     display: flex;
     margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
+    @media (max-width: 1400px) and (min-width: 850px) {
+      justify-content: center;
+    }
     gap: 20px;
     @media (max-width: 850px) and (min-width: 500px) {
       display: flex;
@@ -181,8 +198,6 @@ export const whySection = css`
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
-      margin-left: 5%;
-      margin-right: 5%;
     }
   }
 `

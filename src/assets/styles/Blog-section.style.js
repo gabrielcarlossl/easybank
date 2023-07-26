@@ -13,7 +13,6 @@ export const style = css`
   }
 
   .blogContainer {
-    margin: 0px 15% 0px 15%;
     @media (max-width: 1500px) {
       display: flex;
       flex-direction: column;

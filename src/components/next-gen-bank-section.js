@@ -8,19 +8,20 @@ import RequestInviteButton from './request-invite-button'
 import phones from '../assets/images/image-mockups.png'
 import Card from './card'
 import { cardData } from '../data'
+import { Container } from 'react-bootstrap'
 
 const NextGenBankSection = () => {
   return (
     <div css={customSection}>
-      <section class='sectionStyle '>
-        <div class='wrapper'>
-          <div class='content'>
-            <div class='image'>
-              <img class='imageSrc' src={phones} alt='' />
+      <Container className='sectionStyle '>
+        <div className='wrapper'>
+          <div className='content'>
+            <div className='image'>
+              <img className='imageSrc' src={phones} alt='' />
             </div>
-            <div class='description'>
-              <h1 class='title'>Next generation digital banking</h1>
-              <p class='text'>
+            <div className='description'>
+              <h1 className='title'>Next generation digital banking</h1>
+              <p className='text'>
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending. saving, budgeting, investing, and
                 much more.
@@ -29,22 +30,24 @@ const NextGenBankSection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </Container>
       <section css={whySection}>
-        <div className='whyTitle'>
-          <h2>Why choose Easybank?</h2>
-          <p>
-            We leverage Open Banking to turn your bank account into your
-            finatial hub. Control your finaces like never before.
-          </p>
-        </div>
-        <div className='cards'>
-          {cardData.map((data) => <Card data={data} /> )
-          }
-        </div>
-      </section>
-      <section>
-
+        <Container className='whyTitleContainer'>
+          <div className='whyTitle'>
+            <div>
+              <h2>Why choose Easybank?</h2>
+              <p>
+                We leverage Open Banking to turn your bank account into your
+                finatial hub. Control your finaces like never before.
+              </p>
+            </div>
+          </div>
+        </Container>
+        <Container className='cards'>
+          {cardData.map((data) => (
+            <Card data={data} />
+          ))}
+        </Container>
       </section>
     </div>
   )

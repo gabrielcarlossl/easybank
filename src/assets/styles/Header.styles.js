@@ -11,12 +11,7 @@ export const header = css`
   padding: 39px 40px 0 45px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   color: #c5c4ca;
-  .header {
-    @media (min-width: 500px) {
-      margin-right: 10%;
-      margin-left: 10%;
-    }
-  }
+  
 
   &.fixedHeader {
     background-color: #fff;

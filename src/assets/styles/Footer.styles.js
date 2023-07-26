@@ -34,8 +34,6 @@ export const footer = css`
   .footer {
     display: flex;
     justify-content: space-between;
-    margin-right: 15%;
-    margin-left: 15%;
     @media (max-width: 850px) {
       display: flex;
       flex-direction: column;

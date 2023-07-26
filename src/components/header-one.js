@@ -60,9 +60,9 @@ const HeaderOne = () => {
     >
       
       <Container fluid>
-        <Row style={{flexWrap: 'nowrap'}} className="justify-content-between header">
-          <Col className="col-6" lg={2} md={3} sm={3}>
-            <div css={logo}>
+        <Container style={{ display: 'flex',flexWrap: 'nowrap'}} className="justify-content-between header">
+          <Col style={{padding: 0, display: 'grid'}} className="col-6" lg={2} md={3} sm={3}>
+            <div style={{justifySelf: 'flex-start'}} css={logo}>
               <Link to="/">
                 <img src={LogoImage.light} alt="" />
               </Link>
@@ -110,7 +110,7 @@ const HeaderOne = () => {
               </a>
             </div>
           </Col>
-        </Row>
+        </Container>
       </Container>
     </header>
   );
