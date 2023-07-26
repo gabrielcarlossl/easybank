@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer css={footer}>
       <Container className='footer'>
-        <div className='flex'>
+        <div data-aos='fade-right' className='flex'>
           <div className='flex-col'>
             <a href='/'>
               <img src={logo} alt='' />
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='requestBtnSection'>
+        <div data-aos='fade-left' className='requestBtnSection'>
           <div>
             <RequestInviteButton />
           </div>

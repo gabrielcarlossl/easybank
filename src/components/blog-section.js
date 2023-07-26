@@ -12,7 +12,7 @@ const BlogSection = () => {
         <h2>Latest Articles</h2>
         <div css={blogSection} style={{ display: 'flex', gap: '40px' }}>
           {blogData.map((data) => (
-            <BlogCard data={data} />
+            <BlogCard  data={data} />
           ))}
         </div>
       </Container>
