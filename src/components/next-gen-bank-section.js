@@ -13,15 +13,15 @@ import { Container } from 'react-bootstrap'
 const NextGenBankSection = () => {
   return (
     <div css={customSection}>
-      <Container className='sectionStyle '>
-        <div className='wrapper'>
-          <div className='content'>
-            <div className='image'>
-              <img className='imageSrc' src={phones} alt='' />
+       <section class='sectionStyle '>
+        <div class='wrapper'>
+          <div class='content'>
+            <div class='image'>
+              <img class='imageSrc' src={phones} alt='' />
             </div>
-            <div className='description'>
-              <h1 className='title'>Next generation digital banking</h1>
-              <p className='text'>
+            <div class='description'>
+              <h1 class='title'>Next generation digital banking</h1>
+              <p class='text'>
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending. saving, budgeting, investing, and
                 much more.
@@ -30,7 +30,7 @@ const NextGenBankSection = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </section>
       <section css={whySection}>
         <Container className='whyTitleContainer'>
           <div className='whyTitle'>

@@ -6,24 +6,14 @@ import phones from '../images/image-mockups.png'
 export const customSection = css`
   overflow-x: hidden;
   overflow-y: hidden;
-
-  @media (max-width: 500px) {
-    .sectionStyle {
-      padding: 0 !important;
-      margin: 0px !important;
-    }
-  }
   .sectionStyle {
     text-align: center;
     padding-bottom: 5em;
 
     .description {
       align-self: end;
-      position: relative;
-
       @media (max-width: 500px) {
         margin: 0 30px;
-        padding-bottom: 60px;
       }
       .title {
         font-weight: 400;
@@ -82,6 +72,7 @@ export const customSection = css`
       min-height: 550px;
       grid-template-areas: 'description image';
       grid-template-columns: 370px 1fr;
+      margin-left: 15%;
     }
     .image {
       grid-area: image;
@@ -103,14 +94,14 @@ export const customSection = css`
     .imageSrc {
       display: block;
       position: relative;
-      top: -87px;
+      top: -12px;
       z-index: 1;
-      left: 73%;
+      left: 80%;
       @media (max-width: 1400px) and (min-width: 1025px) {
         left: -7%;
       }
       @media (max-width: 1280px) and (min-width: 850px) {
-        left: 5%;
+        left: -12%;
       }
     }
     .image {
