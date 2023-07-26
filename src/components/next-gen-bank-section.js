@@ -14,14 +14,14 @@ const NextGenBankSection = () => {
   return (
     <div css={customSection}>
        <section class='sectionStyle '>
-        <div class='wrapper'>
-          <div class='content'>
-            <div class='image'>
-              <img class='imageSrc' src={phones} alt='' />
+        <div className='wrapper'>
+          <div className='content'>
+            <div data-aos="fade-left" className='image'>
+              <img className='imageSrc' src={phones} alt='' />
             </div>
-            <div class='description'>
-              <h1 class='title'>Next generation digital banking</h1>
-              <p class='text'>
+            <div data-aos="fade-right" className='description'>
+              <h1  className='title'>Next generation digital banking</h1>
+              <p className='text'>
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending. saving, budgeting, investing, and
                 much more.
@@ -33,7 +33,7 @@ const NextGenBankSection = () => {
       </section>
       <section css={whySection}>
         <Container className='whyTitleContainer'>
-          <div className='whyTitle'>
+          <div data-aos="fade-right" className='whyTitle'>
             <div>
               <h2>Why choose Easybank?</h2>
               <p>
@@ -43,7 +43,7 @@ const NextGenBankSection = () => {
             </div>
           </div>
         </Container>
-        <Container className='cards'>
+        <Container data-aos="fade-up" className='cards'>
           {cardData.map((data) => (
             <Card data={data} />
           ))}

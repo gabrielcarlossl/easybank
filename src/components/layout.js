@@ -8,15 +8,13 @@ import SearchPopup from '@/components/search-popup'
 import PopupMenu from '@/components/popup-menu'
 import { Link as ScrollLink } from 'react-scroll'
 import { jsx } from '@emotion/react'
-
-// import "typeface-oswald";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@/css/animate.css'
 import '@/css/font-awesome.min.css'
 import '@/css/icons.css'
-// import "@/css/preset.css";
-// import "@/css/theme.css";
-// import "@/css/responsive.css";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 import { showIt } from '../assets/styles/layout.styles'
 
@@ -121,6 +119,14 @@ const Layout = ({ PageTitle, children }) => {
       setScrollTop(false)
     }
   }
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once:true
+    })
+    AOS.refresh()
+  }, [])
 
   useEffect(() => {
     window.addEventListener('scroll', handleScrollTop)

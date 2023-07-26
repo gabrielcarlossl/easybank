@@ -11,7 +11,7 @@ import {
 const BlogCard = ({ data }) => {
   const { img, author, title, resume } = data
   return (
-    <div css={latestBlogItem}>
+    <div data-aos='fade-up' css={latestBlogItem}>
       <div css={lbiThumb}>
         <img src={img} alt={title} />
       </div>
