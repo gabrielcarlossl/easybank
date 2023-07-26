@@ -4,11 +4,12 @@ import { jsx } from '@emotion/react'
 import { footer } from '../assets/styles/Footer.styles'
 import RequestInviteButton from './request-invite-button'
 import logo from '../assets/images/logo-white.svg'
+import { Container } from 'react-bootstrap'
 
 const Footer = () => {
   return (
     <footer css={footer}>
-      <div className='footer'>
+      <Container className='footer'>
         <div className='flex'>
           <div className='flex-col'>
             <a href='/'>
@@ -64,9 +65,9 @@ const Footer = () => {
           <div>
             <RequestInviteButton />
           </div>
-          <span>© Easybank. All Rights Reserved</span>
+          <span className='copyright'>© Easybank. All Rights Reserved</span>
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }

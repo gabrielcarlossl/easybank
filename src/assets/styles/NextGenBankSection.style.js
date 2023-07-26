@@ -123,8 +123,15 @@ export const whySection = css`
     justify-content: center;
     align-items: center;
   }
+  .whyTitleContainer {
+    @media (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
   .whyTitle {
-    margin-left: 15%;
     @media (max-width: 850px) and (min-width: 500px) {
       display: flex;
       flex-direction: column;
@@ -146,14 +153,14 @@ export const whySection = css`
         font-size: 36px;
       }
       @media (max-width: 500px) {
-        width: 200px;
+        margin: 0 20px 30px 20px;
         text-align: center;
       }
     }
     p {
       margin: 0;
       padding: 0;
-      width: 600px;
+
       color: gray;
       @media (max-width: 850px) and (min-width: 500px) {
         text-align: center;
@@ -169,8 +176,9 @@ export const whySection = css`
   .cards {
     display: flex;
     margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
+    @media (max-width: 1400px) and (min-width: 850px) {
+      justify-content: center;
+    }
     gap: 20px;
     @media (max-width: 850px) and (min-width: 500px) {
       display: flex;
@@ -181,8 +189,6 @@ export const whySection = css`
     @media (max-width: 500px) {
       display: flex;
       flex-direction: column;
-      margin-left: 5%;
-      margin-right: 5%;
     }
   }
 `
