@@ -37,8 +37,6 @@ Before cloning the repository on your machine, make sure you meet these prerequi
    ```
    npm install
    ```
-
-   ```
 2. Run the aplication
    ```
    npm run develop
